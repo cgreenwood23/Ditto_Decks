@@ -18,48 +18,43 @@
         }
 
         body {
-            background-color: plum;
+            background-image: url('./images/pokeball.jpg');
+            background-size: contain;
+            background-repeat: repeat;
+            overflow-x: hidden;
             margin: 0;
             padding: 0;
             height: 100vh;
         }
 
         .headerbar {
-            position: absolute;
-            top: 0;
-            left: 0;
             width: 100%;
-            height: 15%;
-            background-color: purple;
-            z-index: 3;
+            height: 15vh;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgba(128, 0, 128, 0.95);
         }
 
         .title {
             font-family: 'PokemonHollow', sans-serif;
             color: white;
-            text-align: center;
             margin: 0;
-            position: absolute;
-            top: 5%;
-            left: 50%;
-            transform: translate(-50%, -50%);
+            text-align: center;
             font-size: 65px;
-            z-index: 4;    
         }
     
         .pokedexbackground {
-            background-image: url('./images/pokeball.jpg');
             object-fit: cover;
             width: 80%;
             padding: 20px;
             text-align: center;
             position: relative;
             margin: auto;
-            z-index: 1; 
         }
 
         .innerpokedexbackground {
-            background-color: white;
             object-fit: cover;
             height: 100vh;
             width: 80%;
@@ -67,7 +62,6 @@
             text-align: center;
             position: relative;
             margin: auto; 
-            z-index: 2;
             display: grid;
             grid-template-columns: repeat(4, 1fr);
             gap: 20px;
@@ -93,7 +87,10 @@
     </style>
 </head>
 <body>
-    <div class='headerbar'></div>
+    <div class='headerbar'>
+        <img src="./images/ditto.svg" alt="ditto" style="width: 80px; height: 80px; margin-right: 20px;">
+        <h1 class="title">Ditto Decks</h1>
+    </div>
     <div class='pokedexbackground'>
         <div class='innerpokedexbackground'>
                 <div class="card">001</div>
@@ -110,9 +107,16 @@
                 <div class="card">012</div>
         </div>
     </div>
-    <div>
-        <h1 class="title">Ditto Decks</h1>
-    </div>
-   
+
+    <footer style="text-align: center; padding: 10px; background-color: rgba(0, 0, 0, 0.5); color: white; font-size: 12px; width: 100%; font-family: sans-serif;">
+        <div>
+            <p>&copy; 2020 DittoDecks</p>
+        </div>
+        <div>
+            <a href="https://www.freepik.com/free-photos-vectors/background" style="color: white;">Pokeball background image by freepik</a>
+            <br>
+            <a href="https://www.flaticon.com/free-icons/pokemon" title="pokemon icons" style="color: white;">Pokemon icons created by Darius Dan - Flaticon</a>
+        </div>
+    </footer>
 </body>
 </html>
