@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DittoDecks</title>
+    <style>
+        @font-face {
+            font-family: 'PokemonHollow';
+            src: url('./fonts/PokemonHollow.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: PokemonGB;
+            src: url('./fonts/PokemonGB.ttf') format('truetype');
+        }
+
+        body {
+            background-color: plum;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+        }
+
+        .headerbar {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 15%;
+            background-color: purple;
+            z-index: 3;
+        }
+
+        .title {
+            font-family: 'PokemonHollow', sans-serif;
+            color: white;
+            text-align: center;
+            margin: 0;
+            position: absolute;
+            top: 5%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 65px;
+            z-index: 4;    
+        }
+    
+        .pokedexbackground {
+            background-image: url('./images/pokeball.jpg');
+            object-fit: cover;
+            width: 80%;
+            padding: 20px;
+            text-align: center;
+            position: relative;
+            margin: auto;
+            z-index: 1; 
+        }
+
+        .innerpokedexbackground {
+            background-color: white;
+            object-fit: cover;
+            height: 100vh;
+            width: 80%;
+            padding: 100px 20px 20px 20px;;
+            text-align: center;
+            position: relative;
+            margin: auto; 
+            z-index: 2;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+            justify-items: center;
+        }
+
+        .card {
+            background: linear-gradient(to bottom, #ffffff, #dedddd);
+            border: 3px solid #ccc;
+            border-radius: 10px;
+            padding: 10px;
+            width: 150px;
+            height: 200px;
+            box-shadow: inset 0 4px 8px rgba(0, 0, 0, 0.2);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: 'Georgia', serif;
+            font-size: x-large;
+            color: grey;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class='headerbar'></div>
+    <div class='pokedexbackground'>
+        <div class='innerpokedexbackground'>
+                <div class="card">001</div>
+                <div class="card">002</div>
+                <div class="card">003</div>
+                <div class="card">004</div>
+                <div class="card">005</div>
+                <div class="card">006</div>
+                <div class="card">007</div>
+                <div class="card">008</div>
+                <div class="card">009</div>
+                <div class="card">010</div>
+                <div class="card">011</div>
+                <div class="card">012</div>
+        </div>
+    </div>
+    <div>
+        <h1 class="title">Ditto Decks</h1>
+    </div>
+   
+</body>
+</html>
